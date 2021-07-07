@@ -9,11 +9,11 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function() { // esto es para el codigo javascript de jquery
+        $(document).ready(function() { // esto es para el codigo javascript de jquery, el ready es para que se haga referencia a elementos que están más abajo en el código
             $("body").hide().fadeIn(2000); //esto ya es jquery
-
-
-
+            //alert($("#errores h2").html());  // esto es para que nos saque en un alert el texto que hay dentro del contenedor errores y dentro de su h2
+            //$("#errores").html("<p> Hay errores en el formulario</p>"); //esto sustituye el texto dentro del contenedor por el que le pasamos 
+            // si en lugar de html utilizamos .append() añadiría el texto a continuación con un salto de linea
         }); 
 
 
@@ -22,11 +22,15 @@
 
 </head>
 <body>
-    <h1>
+    <div id = "contenedor">
+        <div id = "errores" class = "micontenedor">
 
-        Hola a todos
+            <h2> HOla que tal</h2>
 
-    </h1>
+        </div>
+
+
+    </div>
 
     <p> 
         Binvenidos
