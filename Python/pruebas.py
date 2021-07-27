@@ -59,3 +59,45 @@ print(midiccionario2["Anillos"])
 
 milista = midiccionario2.keys()
 print(milista)
+
+
+# condicionales
+nota = 6
+if nota > 5 and nota < 7:
+    print("aprobado notable")
+else:
+    print("suspenso")
+
+
+# inputs
+# cualquier input en python es de tipo String
+# para que se transforme el input a tipo entero utilizamos el casting de int()
+
+
+# bucles
+for i in range(10):
+    print(i)
+
+
+# generadores
+def generador(limite):
+    num = 1
+    while num <= limite:
+        yield num * 2  # retorna el valor de num * 2 y lo añade a una estructura iterable
+        num = num + 1
+
+
+respuesta = generador(10)
+# devuelve el primer valor de la estructura iterable y lo deja en suspensión para la siguiente vez que utilicemos next(), así podríamos ir sacando valores de una lista infinita.
+print(next(respuesta))
+
+
+def ciudades(*ciudades):  # * para indicar que no sabemos cuantos argumentos vamos a recibir
+    for elemento in ciudades:
+        # for subElem in elemento:
+        # para ir iterando por cada elemento y dentro de cada elemento ir iterando en sus letras.
+        yield from elemento
+
+
+ciudades_devueltas = ciudades("Madrid", "Barcelona", "Bilbao")
+print(next(ciudades_devueltas))
