@@ -50,7 +50,7 @@ del midiccionario["ReinoUnido"]  # para eliminar un elemento
 print(midiccionario)
 
 mitupla = ("España", "Francia", "Reino Unido", "Alemania")
-midiccionario = {mitupla[0]: "Madrid", mitupla[1]                 : "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
+midiccionario = {mitupla[0]: "Madrid", mitupla[1]: "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
 print(midiccionario["Francia"])
 
 midiccionario2 = {23: "Jordan", "Nombre": "Michael",
