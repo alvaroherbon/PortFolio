@@ -1,3 +1,7 @@
+import re
+<< << << < HEAD
+== == == =
+>>>>>> > df3e12cb5942bff2de69704e6983cf2589f0e020
 
 milista = ["maria", "pepe", "marta", "Antonio"]
 
@@ -105,6 +109,9 @@ ciudades_devueltas = ciudades("Madrid", "Barcelona", "Bilbao")
 print(next(ciudades_devueltas))
 
 
+<< << << < HEAD
+
+
 def reverseBits(x):
     num = str(x)
     num = num[::-1]
@@ -116,3 +123,27 @@ def reverseBits(x):
 
 
 print(reverseBits(10100101000001111010011100))
+== == == =
+# pattern recognition
+messsage = "hola mi numero es 666-097-120"
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d')
+print(phoneNumRegex.findall(messsage))
+
+# the same with other function
+mi = phoneNumRegex.search(messsage)
+print(mi.group())
+
+
+# separate elements within the ocurrences of a pattern
+# to search a parentesis intentionally, use \ before the parentesis
+phoneNumRegex = re.compile(r'(\d\d\d)-\d\d\d-\d\d\d')
+mi = phoneNumRegex.search(messsage)
+print(mi.group(1))
+
+
+# pipes in the pattern
+message = "la Autocaravana está averiada"
+autoRegex = re.compile(r'Auto(movil|carro|caravana)')
+mi = autoRegex.search(message)
+print(mi.group())
+>>>>>> > df3e12cb5942bff2de69704e6983cf2589f0e020
