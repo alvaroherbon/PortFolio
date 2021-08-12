@@ -1,3 +1,4 @@
+
 milista = ["maria", "pepe", "marta", "Antonio"]
 
 # funciones
@@ -50,7 +51,8 @@ del midiccionario["ReinoUnido"]  # para eliminar un elemento
 print(midiccionario)
 
 mitupla = ("España", "Francia", "Reino Unido", "Alemania")
-midiccionario = {mitupla[0]: "Madrid", mitupla[1]: "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
+midiccionario = {mitupla[0]: "Madrid", mitupla[1]
+    : "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
 print(midiccionario["Francia"])
 
 midiccionario2 = {23: "Jordan", "Nombre": "Michael",
@@ -101,3 +103,16 @@ def ciudades(*ciudades):  # * para indicar que no sabemos cuantos argumentos vam
 
 ciudades_devueltas = ciudades("Madrid", "Barcelona", "Bilbao")
 print(next(ciudades_devueltas))
+
+
+def reverseBits(x):
+    num = str(x)
+    num = num[::-1]
+    print(num)
+    num = int(num, 2)
+    print(num)
+    # num = int(num, 2)
+    # return num
+
+
+print(reverseBits(10100101000001111010011100))
