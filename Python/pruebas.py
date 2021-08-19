@@ -1,7 +1,4 @@
 import re
-<< << << < HEAD
-== == == =
->>>>>> > df3e12cb5942bff2de69704e6983cf2589f0e020
 
 milista = ["maria", "pepe", "marta", "Antonio"]
 
@@ -55,7 +52,7 @@ del midiccionario["ReinoUnido"]  # para eliminar un elemento
 print(midiccionario)
 
 mitupla = ("España", "Francia", "Reino Unido", "Alemania")
-midiccionario = {mitupla[0]: "Madrid", mitupla[1]                 : "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
+midiccionario = {mitupla[0]: "Madrid", mitupla[1]: "Paris", mitupla[2]: "Londres", mitupla[3]: "Berlin"}
 print(midiccionario["Francia"])
 
 midiccionario2 = {23: "Jordan", "Nombre": "Michael",
@@ -108,9 +105,6 @@ ciudades_devueltas = ciudades("Madrid", "Barcelona", "Bilbao")
 print(next(ciudades_devueltas))
 
 
-<< << << < HEAD
-
-
 def reverseBits(x):
     num = str(x)
     num = num[::-1]
@@ -122,7 +116,7 @@ def reverseBits(x):
 
 
 print(reverseBits(10100101000001111010011100))
-== == == =
+
 # pattern recognition
 messsage = "hola mi numero es 666-097-120"
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d')
@@ -145,4 +139,3 @@ message = "la Autocaravana está averiada"
 autoRegex = re.compile(r'Auto(movil|carro|caravana)')
 mi = autoRegex.search(message)
 print(mi.group())
->>>>>> > df3e12cb5942bff2de69704e6983cf2589f0e020
