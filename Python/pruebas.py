@@ -1,37 +1,8 @@
 import re
 
-milista = ["maria", "pepe", "marta", "Antonio"]
-
-# funciones
+milista = ["maria", "pepe", "marta", "ntonio"]
 
 
-def mensaje():
-    print(milista[2])
-    print(milista[:5])
-    milista.append("Carlos")
-    print(milista[:5])
-    print(milista.index("pepe"))
-    print("pepe" in milista)  # contains
-    milista.extend(["jaimito", "lucia"])
-    milista.pop()
-    print(milista)
-
-
-mensaje()
-
-# funciones2
-
-
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n - 1) + fibonacci(n - 2)
-
-
-print(fibonacci(12))
 
 # tupla
 mitupla = ("juan", 13, 1, 1995)
